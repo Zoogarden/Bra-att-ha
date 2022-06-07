@@ -1,0 +1,6 @@
+Import-Module ADSync
+Get-ADSyncScheduler för att få reda på inställningar
+Starta delta synk:
+Start-ADSyncSyncCycle -PolicyType Delta
+För att skapa synk av allt och inte bara förändringar:
+Start-ADSyncSyncCycle -PolicyType Initial
